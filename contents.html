@@ -1,0 +1,159 @@
+<div class="contents">
+  <ul>
+    <li class="navTxt hvr-bounce-to-rightGreen"  scroll-to="about"
+    container-id="custom-container-id" offset="50">ABOUT</li>
+    <li class="navTxt hvr-bounce-to-rightGreen"  scroll-to="work"
+    container-id="custom-container-id"  offset="50">WORK</li>
+    <li href="#resume" class="navTxt hvr-bounce-to-rightGreen"  scroll-to="resume"
+    container-id="custom-container-id"  offset="0">RESUME</li>
+    <li href="#contact" class="navTxt hvr-bounce-to-rightGreen"  scroll-to="contact"
+    container-id="custom-container-id"  offset="50">CONTACT</li>
+  </ul>
+  <div class="iconRow">
+    <div class="iconBox">
+      <a href="https://github.com/datLucius"><div class="fa fa-github green"></div></a>
+      <a href="https://www.linkedin.com/pub/lucius-nelson/103/493/998"><div class="fa fa-linkedin-square green"></div></a>
+      </div>
+  </div>
+</div>
+
+<!-- about-->
+
+<div id="about">
+  <div class="aboutSizer">
+    <div class="aboutText2">CODE as ART</div>
+  <div class="aboutText">My skills were forged in the firey depths of Fine Art. Driven by an unquenchable urge to learn and create, I traversed the kingdoms of Paint and Film. Now, harnessing all the skills I've aquired - the eye for detail, the love of teamwork, the determination to be push creativity - I am exploring Front End Development in all its glory.</div>
+  <div class="aboutText2" id="secondTitle">Let's go</div>
+  <div class="aboutText">I'm currently looking to join forces with a design-driven creative team that loves the process and quality of what they do.</div>
+  </div>
+</div>
+
+<!-- about-->
+
+<div class="work" id="work">
+    <div class="workTitle">work</div>
+  <ul class="rowofWork">
+    <li class="portfolioPiece" ng-click="showDetail()">
+      <div class="spoke"></div>
+      <div class="workText">YES YES Y'ALL</div>
+    </li>
+    <li class="portfolioPiece" ng-click="showIKDetail()">
+      <div class="imK"></div>
+      <div class="workText">IMMORAL KOMBAT</div>
+    </li>
+    <li class="portfolioPiece" ng-click="showBDDetail()">
+      <div class="bigD"></div>
+      <div class="workText">L.H.W.Jr.</div>
+    </li>
+    <li class="portfolioPiece" ng-click="showdatArtDetail()">
+      <div class="datArt"></div>
+      <div class="workText">DAT ART THO</div>
+    </li>
+    <li class="portfolioPiece" ng-click="showHexDetail()">
+      <div class="hexMix"></div>
+      <div class="workText">HEX MIX</div>
+    </li>
+      <li class="portfolioPiece text">find more art @ <a href="http://jlnelsonart.com" id="websiteLink">jlnelsonart.com</a></li>
+  </ul>
+  </div>
+
+</div>
+
+<!-- resume -->
+
+<div id="resume">
+      <span class="resumeText">resume</span>
+  <div class="resumeBox">
+    <div class="resumeLinks">
+      <a href="#/resume"><div class="fa fa-file icon" ng-click=><p class="webPdf">web</p></div></a>
+      <div class="fa fa-file-pdf-o icon"><p class="webPdf">pdf</p></div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- contact-->
+
+<div id="contact">
+  <div class="contactTitle">LET'S MAKE THE WEB FUN</div>
+  <ul class="contactInfo">
+    <li><a href="mailto:jlnelsonart@gmail.com" class="visHover">jlnelsonart@gmail.com</a></li>
+    <li><a href="tel:843-670-3343" class="visHover">(843) 670 3343</a></li>
+  </ul>
+
+</div>
+
+<div id="floating-nav-content">
+     <span class="navName">LUCIUS</span>
+     <ul class="navLinks">
+       <li  scroll-to="about"
+       container-id="custom-container-id" offset="50">about</li>
+       <li scroll-to="work"
+       container-id="custom-container-id"  offset="50">work</li>
+       <li scroll-to="resume"
+       container-id="custom-container-id"  offset="0">resume</li>
+       <li scroll-to="contact"
+       container-id="custom-container-id"  offset="50">contact</li>
+     </ul>
+ </div>
+
+
+ <!-- Project Detail overlays-->
+
+ <div class="detailTxt hideThis">
+   <div class="spokeImg"></div>
+   <div class="centerText">
+     <div class="title">Yes Yes Y'all</div>
+     <a href="http://datlucius.github.io/GoldenAge/"><div class="viewProject">VIEW</div></a>
+     <div class="description">I love discovering the connectivity of hip hop. This interactive infographic shows the web of James Brown and P-Funk samples found in albums during the 'Golden Age' of hip hop.</div>
+     <div class="tech">tech used: Angular JS, Illustrator, Photoshop, SVG, JQuery, Spotify API, HTML, CSS</div>
+        <div class="closeThis fa fa-chevron-circle-left detailClose" ng-click="hideDetail()"></div>
+   </div>
+ </div>
+
+ <div class="imKDetail hideThis">
+   <div class="imkImg"></div>
+   <div class="centerText">
+     <div class="title">Immoral Kombat</div>
+     <a href="http://datlucius.github.io/ImmoralKombat/"><div class="viewProject">PLAY</div></a>
+     <div class="description">After a restless night of sleep, I awoke with the cryptic phrase ‘2 mini lizards’ stuck in my head. Hence, an Immortal Kombat style drinking game starring two small lizards was born.</div>
+     <div class="tech">tech used: Javascript, JQuery, Illustrator, Photoshop, HTML, CSS</div>
+        <div class="closeThis fa fa-chevron-circle-left detailClose" ng-click="hideIKDetail()"></div>
+   </div>
+ </div>
+
+ <div class="bigDDetail hideThis">
+   <div class="bigDImg"></div>
+   <div class="centerText">
+     <div class="title">Lucius Henry Weeks, Jr.</div>
+     <div class="description">My grandfather use to give me a pocket knife everytime he would visit. Overtime, I realized he was giving me his personality expressed via pocket knives. For his 80th birthday, I devoted 80 hours into painting his portrait alongside our knife collection.</div>
+     <div class="tech">awarded Best in Show @ <a href="http://www.charlestoncitypaper.com/charleston/young-contemporaries-highlights-cofcs-star-students/Content?oid=4599765" class="overlayLink">the Halsey's Young Contemporary Show 2013</a></div>
+        <div class="closeThis fa fa-chevron-circle-left detailClose" ng-click="hideBDDetail()"></div>
+   </div>
+ </div>
+
+ <div class="hexMixDetail hideThis">
+   <div class="hexMixImg"></div>
+   <div class="centerText">
+     <div class="title">Hex Mix</div>
+     <div class="description">This is a group project I worked on at the Iron Yard. During this project, I was required to step up to the plate in Angular JS and build functionality that let's users create / search color palettes. My front end team worked with a a back end team to discuss concept, data structure, and learn how to collaborate using github.</div>
+     <div class="tech">Tech used: Angular JS, Jquery, Javascript, Spectrum, HMTL, CSS, git</div>
+        <div class="closeThis fa fa-chevron-circle-left detailClose" ng-click="hideHexDetail()"></div>
+   </div>
+ </div>
+
+ <div class="datArtDetail hideThis">
+   <div class="vidPlayer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SNJYbDC613s" frameborder="0" allowfullscreen></iframe>
+
+   </div>
+   <div class="centerText">
+     <div class="title">Dat Art Tho</div>
+     <div class="description">In 2014, unsatisfied with the representation of my fellow artists, I organized a highly succesful group art show at King Dusko. Top video is the promo video I created for the show. Bottom video is a recap of the show courtesy Chap Fowler.</div>
+        <div class="vidPlayer">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/OjCI1udajUs" frameborder="0" allowfullscreen class="centerThis"></iframe>
+        </div>
+        <div class="closeThis fa fa-chevron-circle-left detailClose" ng-click="hidedatArtDetail()"></div>
+   </div>
+ </div>
