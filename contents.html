@@ -1,5 +1,5 @@
 <div class="contents">
-  <ul>
+  <ul class="linkContainer">
     <li class="navTxt hvr-bounce-to-rightGreen"  scroll-to="about"
     container-id="custom-container-id" offset="50">ABOUT</li>
     <li class="navTxt hvr-bounce-to-rightGreen"  scroll-to="work"
@@ -11,9 +11,9 @@
   </ul>
   <div class="iconRow">
     <div class="iconBox">
-      <a href="https://github.com/datLucius"><div class="fa fa-github green"></div></a>
-        <a href="mailto:jlnelsonart@gmail.com"><div class="fa fa-envelope green"></div></a>
-      <a href="https://www.linkedin.com/pub/lucius-nelson/103/493/998"><div class="fa fa-linkedin-square green"></div></a>
+      <a href="https://github.com/datLucius" class="col-mid-4"><div class="fa fa-github green iconSpacer col-mid-4"></div></a>
+        <a href="mailto:jlnelsonart@gmail.com" class="col-mid-4"><div class="fa fa-envelope green iconSpacer col-mid-4"></div></a>
+      <a href="https://www.linkedin.com/pub/lucius-nelson/103/493/998" class="col-mid-4"><div class="fa fa-linkedin-square green iconSpacer col-mid-4"></div></a>
       </div>
   </div>
 </div>
@@ -22,10 +22,14 @@
 
 <div id="about">
   <div class="aboutSizer">
+    <div class="aboutP1">
     <div class="aboutText2">CODE as ART</div>
   <div class="aboutText">My skills were forged in the fiery depths of Fine Art. Driven by an unquenchable urge to learn and create, I traversed the kingdoms of Paint and Film. Now, harnessing all the skills I've aquired - the eye for detail, the love of teamwork, the determination to be push creativity - I am exploring Front End Development in all its glory.</div>
-  <div class="aboutText2" id="secondTitle">Let's go</div>
-  <div class="aboutText">I'm currently looking to join forces with a design-driven creative team that loves the process and quality of what they do.</div>
+  </div>
+  <div class="aboutP2">
+    <div class="aboutText2" id="secondTitle">Let's go</div>
+    <div class="aboutText">I'm currently looking to join forces with a design-driven creative team that loves the process and quality of what they do.</div>
+  </div>
   </div>
 </div>
 
@@ -35,15 +39,15 @@
     <div class="workTitle">work</div>
   <ul class="rowofWork">
     <a href="#/yes"><li class="portfolioPiece" ng-click="showDetail()">
-      <div class="spoke"></div>
+      <div class="spoke col-mid-4"></div>
       <div class="workText">YES YES Y'ALL</div>
     </li></a>
     <a href="#/imK"><li class="portfolioPiece" ng-click="showIKDetail()">
-      <div class="imK"></div>
+      <div class="imK col-mid-4"></div>
       <div class="workText">IMMORAL KOMBAT</div>
     </li></a>
     <a href="#/art"><li class="portfolioPiece" ng-click="showdatArtDetail()">
-      <div class="datArt"></div>
+      <div class="datArt col-mid-4"></div>
       <div class="workText">ART WORK</div>
     </li></a>
   </ul>
