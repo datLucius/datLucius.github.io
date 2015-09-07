@@ -31,6 +31,10 @@
         templateUrl: 'art.html',
         controller: 'MainController'
       })
+      .when('/skate', {
+        templateUrl: 'skate.html',
+        controller: 'MainController'
+      })
       .when('/404', {
         templateUrl: 'views/biz.html',
         controller: 'MainController'
