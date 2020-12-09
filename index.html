@@ -3,10 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <title>Lucius Nelson</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Howdy</h1>
+  <style>
+    body {
+      margin: 0 10px;
+    }
+    .threecol {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .name {
+      width: 20%;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 72px;
+      padding-top: 100px;
+    }
+    .email a {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 72px;
+      display: block;
+    }
+    .name h1 {
+      transform: rotate(90deg);
+    }
+    .feed {
+      width: 50%;
+      padding: 15px;
+      max-width: 900px;
+      overflow: scroll;
+      height: 100vh;
+    }
+
+    .feed img {
+      width: 100%;
+      padding-top: 25px;
+    }
+
+    .email {
+      width: 20%;
+      text-align: right;
+      padding-top: 100px;
+    }
+
+  </style>
+  <div class="threecol">
+    <div class="name" id="namecol">
+      <div>Lucius</div>
+      <div>Nelson</div>
+    </div>
+    <div class="feed" id="feed" data-imageview="false">
+      <!-- Sophie-->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3eud7A01zX-W6xID9gTo8WxkKkybtlOzYS8OkNcUHmEf3STb7hpXwSr8cnqjYCo5zPgwpST07Dh7wtJrlxL0XBLsj_6vrmrSasEQuSKdT5R04S3N5BRNFa0iPl6tkX-SV31j5uksNTga4I_E8hD6HZv=w1875-h1401-no?authuser=0">
+      <!-- Triana -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3cdB7_0ykfNK3eMkh0BoQslz-q6vWhm_UtJ2IQJqO9E8Pa-t8NMpspVockEW-dqkAxPQLsjEV7mR4sPM6fsAA1qzg0xs2zbrcsg6c2roIRlhLziUSA3KTY2mHy7IXoEn0m4o_9jQJ1xnXob8iVgJ27g=w1178-h1594-no?authuser=0">
+      <!-- Leigh -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3ezTMRbxlzuqCnjzFZDbKi_VWB0WWJ4zckeH0MxWfz3Ja-YdKIV2kdYWknZvTdP0oJJtJvbzUtL8hVpWhgnB797p_Yuv6-uaPuBHL_j3wlcmeRvF5ClXLFKGh-TIe_GdeVUQeY-TZe42bQXngq2Flsv=w1262-h1594-no?authuser=0">
+      <!-- Aaron -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3d3TyjmDHqzG3wwi5kjV96BbPv846xC-v5ey4bzT7s0XVUwSCsw8KdD-ZOiVjkTyCIXbMELoLhEJ9IDlFcWDRtNhQ6XQYDHlPoahv3uVmqtu6KK1LUAWlgeMMdsw3Ta6YNWk6Ck5I1IvC82I4SHmqP0=w1182-h1594-no?authuser=0">
+      <!-- Mel -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3cwnel95gNzOB57skjEeZ79PKm3DXrVDcBQq73T9cxct5mgqOjQYr1yDjQfillLu5tkAQTyNhj_PgLGrntKHumA91EX4TEQCBTE4EhzJm7T8wFMT-bSvqBq6RQBUGmekjdtL98WH-tm3h0ajyV0G-qZ=w1212-h1594-no?authuser=0">
+      <!-- Billie -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3fvOHcg8ZM2qoK2i_1lOsqwZ-5jvNQ43qM0I9sdxaod_f4BBBdDn2vx-AIDvK3ErtzUmcC1Tameu_BvUFlVd5xudoSYlnvMIj1jYFarlDGzbED8ybnGS2kRk4wjlO3ftXOZiO3lg182WuxyKB9mffqa=w386-h487-no?authuser=0">
+      <!-- Pop Pop -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3dgP4W3BGaTNqdomjxTKuN26L_XaGzUhC2VhCLYyqxrnfESMR6bH32zDXfLqO83r8ZamAJTiL90joDcLl40mhAM4Jdo9vw7-NZu3tMOFOs-lkgIGXM6MtL7Yu6yK33b9_KP-ULZSuoWKyvLv2CLjLqs=w1596-h1594-no?authuser=0">
+      <!-- Ella -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3c4NCidVLLLqMyLPED7bJmHunIjKFQppR5cxVSBNrWpNdH5YIczFSPo4YkIdjd6lmnF_ry-HQD-FW1ozfDKWvZBFSPGtW1GXiyXJwYzes1nf3eOM_GhupEdgtN8DdVq1luJGNTeFKFX3GUkvV0p9zC9=w386-h486-no?authuser=0">
+      <!-- Big Daddy -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3fURM08PVigqGxmWJ4Y_Zt-dy84W9ZtwxKR5MiBhIA0iijwX_jkoh3mPvFSdwTOuPVTPjjfCHB9ARQqP1tSwcV_-O5HobxBDR9XKPsSJVSWmySJfYpMyR-t0NNE62odk86ClfQ2dtuxFxg-4TxbVQqP=w1834-h1348-no?authuser=0">
+      <!-- Kendrick -->
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3djNqDQ4NWZ44uPr8lNKUCTTukH4jix9JZQgHlodEzRZ6fM0so1xgU4lK_30Ig0kQELAhfD6stZ1WRHCp4dRvAXHvFsESWEoyA7r15Pqg6rr_56pJdXVBaj8x5cP2FwNF2ClrA5rJJGVrGPK93t5TeG=w379-h478-no?authuser=0">
+    </div>
+    <div class="email" id="contactcol">
+      <a href="mailto:jlnelsonart@gmail.com">EMAIL</a>
+      <a href="tel:1-843-494-4896">CALL</a>
+    </div>
+    <script>
+      document.addEventListener('click', function(e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+        // console.log(target);
+        if (target.tagName === 'IMG') {
+          var leftCol = document.getElementById('namecol');
+          var rightCol = document.getElementById('contactcol');
+          var feed = document.getElementById('feed');
+          var imgEls = document.getElementById('feed').querySelectorAll('img');
+          if (feed.dataset.imageview === "true") {
+            for (var i = 0; i < imgEls.length; i++) {
+              imgEls[i].removeAttribute('style');
+            }
+            rightCol.removeAttribute('style');
+            feed.removeAttribute('style');
+            leftCol.removeAttribute('style');
+            feed.dataset.imageview = "false";
+          } else {
+            for (var i = 0; i < imgEls.length; i++) {
+              if (imgEls[i] !== target) {
+                imgEls[i].style.display = 'none';
+              } else{
+                imgEls[i].style.margin = "0 auto";
+                imgEls[i].style['object-fit'] = 'contain';
+                imgEls[i].style['padding-top'] = '0';
+              }
+            }
+            rightCol.style.display = 'none';
+            leftCol.style.display = 'none';
+            feed.style.width = '100%';
+            feed.style['max-width'] = 'none';
+            feed.style.display = 'flex';
+            feed.style.padding = '0';
+            feed.style.height = "100vh";
+            feed.dataset.imageview = "true";
+          }
+        }
+      })
+    </script>
+  </div>
 </body>
 </html>
