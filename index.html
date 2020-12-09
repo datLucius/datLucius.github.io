@@ -49,8 +49,30 @@
       text-align: right;
       padding-top: 100px;
     }
+    .showoverlay {
+      display: flex !important;
+      background-color: white;
+    }
 
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+    }
+
+    #overlayimg {
+      width: 100%;
+      object-fit: contain;
+    }
   </style>
+  <div id="overlay">
+    <img id="overlayimg" src="">
+  </div>
   <div class="threecol">
     <div class="name" id="namecol">
       <div>Lucius</div>
@@ -86,38 +108,21 @@
       document.addEventListener('click', function(e) {
         e = e || window.event;
         var target = e.target || e.srcElement;
-        // console.log(target);
-        if (target.tagName === 'IMG') {
-          var leftCol = document.getElementById('namecol');
-          var rightCol = document.getElementById('contactcol');
-          var feed = document.getElementById('feed');
-          var imgEls = document.getElementById('feed').querySelectorAll('img');
-          if (feed.dataset.imageview === "true") {
-            for (var i = 0; i < imgEls.length; i++) {
-              imgEls[i].removeAttribute('style');
+        var overlay = document.getElementById('overlay');
+        var feed = document.getElementById('feed');
+        var overlayimg = document.getElementById('overlayimg');
+        if (feed.dataset.imageview === "true") {
+          // remove overlay
+          feed.dataset.imageview = "false";
+          overlay = document.getElementById('overlay');
+          overlay.className = '';
+        } else {
+          if (target.tagName === 'IMG') {
+            if (target.src) {
+              overlayimg.src = target.src;
+              overlay.className = 'showoverlay';
+              feed.dataset.imageview = 'true';
             }
-            rightCol.removeAttribute('style');
-            feed.removeAttribute('style');
-            leftCol.removeAttribute('style');
-            feed.dataset.imageview = "false";
-          } else {
-            for (var i = 0; i < imgEls.length; i++) {
-              if (imgEls[i] !== target) {
-                imgEls[i].style.display = 'none';
-              } else{
-                imgEls[i].style.margin = "0 auto";
-                imgEls[i].style['object-fit'] = 'contain';
-                imgEls[i].style['padding-top'] = '0';
-              }
-            }
-            rightCol.style.display = 'none';
-            leftCol.style.display = 'none';
-            feed.style.width = '100%';
-            feed.style['max-width'] = 'none';
-            feed.style.display = 'flex';
-            feed.style.padding = '0';
-            feed.style.height = "100vh";
-            feed.dataset.imageview = "true";
           }
         }
       })
